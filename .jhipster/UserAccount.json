@@ -1,0 +1,24 @@
+{
+    "name": "UserAccount",
+    "fields": [
+        {
+            "fieldName": "authId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180826182745",
+    "entityTableName": "user_account",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "smsValidator"
+}

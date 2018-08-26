@@ -1,0 +1,29 @@
+{
+    "name": "PhoneNumber",
+    "fields": [
+        {
+            "fieldName": "number",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "account",
+            "otherEntityName": "userAccount",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "phoneNumber"
+        }
+    ],
+    "changelogDate": "20180826182746",
+    "entityTableName": "phone_number",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "smsValidator"
+}
