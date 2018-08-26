@@ -1,0 +1,26 @@
+
+
+entity Account {
+    auth_id String,
+    username String
+}
+
+
+entity PhoneNumber {
+    number Long
+    account_id Long
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+    PhoneNumber{account_id} to Account
+}
+
+// Set pagination options
+paginate PhoneNumber, Account with infinite-scroll
+paginate PhoneNumber with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
